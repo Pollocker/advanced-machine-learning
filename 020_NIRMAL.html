@@ -9545,4 +9545,217 @@ span#login_widget > .button:active,
 #logout:active,
 span#login_widget > .button.active,
 #logout.active,
-.open > .dropdown-tog
+.open > .dropdown-togglespan#login_widget > .button,
+.open > .dropdown-toggle#logout {
+  background-image: none;
+}
+span#login_widget > .button.disabled:hover,
+#logout.disabled:hover,
+span#login_widget > .button[disabled]:hover,
+#logout[disabled]:hover,
+fieldset[disabled] span#login_widget > .button:hover,
+fieldset[disabled] #logout:hover,
+span#login_widget > .button.disabled:focus,
+#logout.disabled:focus,
+span#login_widget > .button[disabled]:focus,
+#logout[disabled]:focus,
+fieldset[disabled] span#login_widget > .button:focus,
+fieldset[disabled] #logout:focus,
+span#login_widget > .button.disabled.focus,
+#logout.disabled.focus,
+span#login_widget > .button[disabled].focus,
+#logout[disabled].focus,
+fieldset[disabled] span#login_widget > .button.focus,
+fieldset[disabled] #logout.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+span#login_widget > .button .badge,
+#logout .badge {
+  color: #fff;
+  background-color: #333;
+}
+.nav-header {
+  text-transform: none;
+}
+#header > span {
+  margin-top: 10px;
+}
+.modal_stretch .modal-dialog {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 80vh;
+}
+.modal_stretch .modal-dialog .modal-body {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  flex: 1;
+}
+.modal-header {
+  cursor: move;
+}
+@media (min-width: 768px) {
+  .modal .modal-dialog {
+    width: 700px;
+  }
+}
+@media (min-width: 768px) {
+  select.form-control {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+/*!
+*
+* IPython auth
+*
+*/
+.center-nav {
+  display: inline-block;
+  margin-bottom: -4px;
+}
+[dir="rtl"] .center-nav form.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] .center-nav .navbar-text {
+  float: right;
+}
+[dir="rtl"] .navbar-inner {
+  text-align: right;
+}
+[dir="rtl"] div.text-left {
+  text-align: right;
+}
+/*!
+*
+* IPython tree view
+*
+*/
+/* We need an invisible input field on top of the sentense*/
+/* "Drag file onto the list ..." */
+.alternate_upload {
+  background-color: none;
+  display: inline;
+}
+.alternate_upload.form {
+  padding: 0;
+  margin: 0;
+}
+.alternate_upload input.fileinput {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.alternate_upload .btn-xs > input.fileinput {
+  margin: -1px -5px;
+}
+.alternate_upload .btn-upload {
+  position: relative;
+  height: 22px;
+}
+::-webkit-file-upload-button {
+  cursor: pointer;
+}
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
+ul#tabs {
+  margin-bottom: 4px;
+}
+ul#tabs a {
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+[dir="rtl"] ul#tabs.nav-tabs > li {
+  float: right;
+}
+[dir="rtl"] ul#tabs.nav.nav-tabs {
+  padding-right: 0;
+}
+ul.breadcrumb a:focus,
+ul.breadcrumb a:hover {
+  text-decoration: none;
+}
+ul.breadcrumb i.icon-home {
+  font-size: 16px;
+  margin-right: 4px;
+}
+ul.breadcrumb span {
+  color: #5e5e5e;
+}
+.list_toolbar {
+  padding: 4px 0 4px 0;
+  vertical-align: middle;
+}
+.list_toolbar .tree-buttons {
+  padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons .pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .list_toolbar .col-sm-4,
+[dir="rtl"] .list_toolbar .col-sm-8 {
+  float: right;
+}
+.dynamic-buttons {
+  padding-top: 3px;
+  display: inline-block;
+}
+.list_toolbar [class*="span"] {
+  min-height: 24px;
+}
+.list_header {
+  font-weight: bold;
+  background-color: #EEE;
+}
+.list_placeholder {
+  font-weight: bold;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.list_container {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.list_container > div {
+  border-bottom: 1px solid #ddd;
+}
+.list_container > div:hover .list-item {
+  background-color: red;
+}
+.list_container > div:last-child {
+  border: none;
+}
+.list_item:hover .list_item {
+  background-color: #ddd;
+}
+.list_item a {
+  text-decoration: none;
+}
+.list_item:hover {
+  backgrou
