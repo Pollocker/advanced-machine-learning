@@ -12423,4 +12423,172 @@ fieldset[disabled] .notification_widget.info.focus {
 .notification_widget.danger.focus {
   color: #fff;
   background-color: #c9302c;
-  bor
+  border-color: #761c19;
+}
+.notification_widget.danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.notification_widget.danger:active,
+.notification_widget.danger.active,
+.open > .dropdown-toggle.notification_widget.danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.notification_widget.danger:active:hover,
+.notification_widget.danger.active:hover,
+.open > .dropdown-toggle.notification_widget.danger:hover,
+.notification_widget.danger:active:focus,
+.notification_widget.danger.active:focus,
+.open > .dropdown-toggle.notification_widget.danger:focus,
+.notification_widget.danger:active.focus,
+.notification_widget.danger.active.focus,
+.open > .dropdown-toggle.notification_widget.danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.notification_widget.danger:active,
+.notification_widget.danger.active,
+.open > .dropdown-toggle.notification_widget.danger {
+  background-image: none;
+}
+.notification_widget.danger.disabled:hover,
+.notification_widget.danger[disabled]:hover,
+fieldset[disabled] .notification_widget.danger:hover,
+.notification_widget.danger.disabled:focus,
+.notification_widget.danger[disabled]:focus,
+fieldset[disabled] .notification_widget.danger:focus,
+.notification_widget.danger.disabled.focus,
+.notification_widget.danger[disabled].focus,
+fieldset[disabled] .notification_widget.danger.focus {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.notification_widget.danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+div#pager {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-height: 50%;
+  padding-top: 8px;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  /* Display over codemirror */
+  z-index: 100;
+  /* Hack which prevents jquery ui resizable from changing top. */
+  top: auto !important;
+}
+div#pager pre {
+  line-height: 1.21429em;
+  color: #000;
+  background-color: #f7f7f7;
+  padding: 0.4em;
+}
+div#pager #pager-button-area {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+div#pager #pager-contents {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+div#pager #pager-contents #pager-container {
+  position: relative;
+  padding: 15px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+div#pager .ui-resizable-handle {
+  top: 0px;
+  height: 8px;
+  background: #f7f7f7;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  /* This injects handle bars (a short, wide = symbol) for 
+        the resize handle. */
+}
+div#pager .ui-resizable-handle::after {
+  content: '';
+  top: 2px;
+  left: 50%;
+  height: 3px;
+  width: 30px;
+  margin-left: -15px;
+  position: absolute;
+  border-top: 1px solid #cfcfcf;
+}
+.quickhelp {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  line-height: 1.8em;
+}
+.shortcut_key {
+  display: inline-block;
+  width: 21ex;
+  text-align: right;
+  font-family: monospace;
+}
+.shortcut_descr {
+  display: inline-block;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+span.save_widget {
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 50%;
+  flex: 1;
+}
+span.save_widget span.filename {
+  height: 100%;
+  line-height: 1em;
+  margin-left: 16px;
+  border: none;
+  font-size: 146.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 2px;
+}
+span.save_widget span.filename:hover {
+  background-color: #e6e6e6;
+}
+[dir="rtl"] span.save_widget.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"
