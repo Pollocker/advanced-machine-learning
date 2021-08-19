@@ -12807,4 +12807,162 @@ li.pulse.open > a.dropdown-toggle {
 }
 .pretooltiparrow:before {
   background-color: #f7f7f7;
-  border: 1
+  border: 1px #ababab solid;
+  z-index: 11;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+ul.typeahead-list i {
+  margin-left: -10px;
+  width: 18px;
+}
+[dir="rtl"] ul.typeahead-list i {
+  margin-left: 0;
+  margin-right: -10px;
+}
+ul.typeahead-list {
+  max-height: 80vh;
+  overflow: auto;
+}
+ul.typeahead-list > li > a {
+  /** Firefox bug **/
+  /* see https://github.com/jupyter/notebook/issues/559 */
+  white-space: normal;
+}
+ul.typeahead-list  > li > a.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .typeahead-list {
+  text-align: right;
+}
+.cmd-palette .modal-body {
+  padding: 7px;
+}
+.cmd-palette form {
+  background: white;
+}
+.cmd-palette input {
+  outline: none;
+}
+.no-shortcut {
+  min-width: 20px;
+  color: transparent;
+}
+[dir="rtl"] .no-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .command-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+.command-shortcut:before {
+  content: "(command mode)";
+  padding-right: 3px;
+  color: #777777;
+}
+.edit-shortcut:before {
+  content: "(edit)";
+  padding-right: 3px;
+  color: #777777;
+}
+[dir="rtl"] .edit-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+#find-and-replace #replace-preview .match,
+#find-and-replace #replace-preview .insert {
+  background-color: #BBDEFB;
+  border-color: #90CAF9;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+}
+[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
+  border-left: none;
+}
+[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
+  border-right: none;
+}
+#find-and-replace #replace-preview .replace .match {
+  background-color: #FFCDD2;
+  border-color: #EF9A9A;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview .replace .insert {
+  background-color: #C8E6C9;
+  border-color: #A5D6A7;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview {
+  max-height: 60vh;
+  overflow: auto;
+}
+#find-and-replace #replace-preview pre {
+  padding: 5px 10px;
+}
+.terminal-app {
+  background: #EEE;
+}
+.terminal-app #header {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+.terminal-app .terminal {
+  width: 100%;
+  float: left;
+  font-family: monospace;
+  color: white;
+  background: black;
+  padding: 0.4em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+}
+.terminal-app .terminal,
+.terminal-app .terminal dummy-screen {
+  line-height: 1em;
+  font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
+}
+.terminal-app .terminal-cursor {
+  color: black;
+  background: white;
+}
+.terminal-app #terminado-container {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.min.css.map */
+    </style>
+<style type="text/css">
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #0
