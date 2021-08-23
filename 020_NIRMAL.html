@@ -13400,4 +13400,59 @@ div#notebook {
 
 
 
-<div class="output_text output_subarea output_execute_re
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.frame.DataFrame</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exploratory-data-analysis">Exploratory data analysis<a class="anchor-link" href="#Exploratory-data-analysis">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
