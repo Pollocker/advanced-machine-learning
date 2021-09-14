@@ -13566,4 +13566,58 @@ Medu          0
 Fedu          0
 Mjob          0
 Fjob          0
-reason       
+reason        0
+guardian      0
+traveltime    0
+studytime     0
+failures      0
+schoolsup     0
+famsup        0
+paid          0
+activities    0
+nursery       0
+higher        0
+internet      0
+romantic      0
+famrel        0
+freetime      0
+goout         0
+Dalc          0
+Walc          0
+health        0
+absences      0
+passed        0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">(),</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
