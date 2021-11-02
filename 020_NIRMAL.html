@@ -15523,4 +15523,82 @@ Name: passed, dtype: object</pre>
 <pre>80.1526717557252</pre>
 </div>
 
-</
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Model-application-areas">Model application areas<a class="anchor-link" href="#Model-application-areas">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="KNN">KNN<a class="anchor-link" href="#KNN">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>KNN: k-NN is often used in search applications where you are looking for “similar” items; that is, when your task is some form of “find items similar to this one”. The way you measure similarity is by creating a vector representation of the items, and then compare the vectors using an appropriate distance metric (like the Euclidean distance, for example).</p>
+<p>The biggest use case of k-NN search might be Recommender Systems. If you know a user likes a particular item, then you can recommend similar items for them.</p>
+<p>KNN strength: effective for larger datasets, robust to noisy training data</p>
+<p>KNN weakness: need to determine value of k, computation cost is high.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Decision-tree">Decision tree<a class="anchor-link" href="#Decision-tree">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Decision Tree: Can handle both numerical and categorical data.</p>
+<p>Decision tree strength: Decision trees implicitly perform feature selection, require relatively little effort from users for data preparation, easy to interpret and explain to executives.</p>
+<p>Decision tree weakness: Over Fitting, not fit for continuous variables.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SVM">SVM<a class="anchor-link" href="#SVM">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>SVM: SVM classify parts of the image as a face and non-face and create a square boundary around the face(Facial recognization).
+We use SVMs to recognize handwritten characters used widely(Handwritten recognization).</p>
+<p>Strengths: SVM's can model non-linear decision boundaries, and there are many kernels to choose from. They are also fairly robust against overfitting, especially in high-dimensional space.</p>
+<p>Weaknesses: However, SVM's are memory intensive, trickier to tune due to the importance of picking the right kernel, and don't scale well to larger datasets.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Choosing-the-best-model">Choosing the best model<a class="anchor-link" href="#Choosing-the-best-model">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this case, I will be using the SVM model to predict the outcomes. 80.15% of accuracy is achieved in SVM in our case.</p>
+<p>SVM is a supervised machine learning algorithm which can be used for classification or regression problems.</p>
+<p>It uses a tech
